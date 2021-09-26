@@ -1,0 +1,13 @@
+{% extends "layout.html"  %}
+{% block body%}
+
+<form action="/update/{{paciente.0}}" method="POST">
+    <input type="text" name="Dni" placeholder="Dni" value="{{paciente.0}}">
+    <input type="text" name="Nombre" placeholder="Nombre" value="{{paciente.1}}">
+    <input type="text" name="telefono" placeholder="Numero de Telefono" value="{{paciente.2}}">
+    <input type="date" name="Turno" placeholder="Turno" value="{{paciente.3}}">
+    <input type="text" name="Observaciones" placeholder="Observaciones" value="{{paciente.4}}">
+    <button type="submit">Enviar</button>
+</form>
+
+{% endblock %}
